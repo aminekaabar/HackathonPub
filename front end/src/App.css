@@ -1,0 +1,302 @@
+body{
+    /* margin :100px 185px; */
+    margin-bottom: 0; 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black
+    
+  }
+  .Docplanner-header{
+    position: fixed;
+    display: flex;
+    z-index: 3;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #f8f9fa;
+    
+    justify-content: space-around;
+    height: 70px;
+    align-items: center
+    }
+    .sub{
+      display: none; 
+      position: absolute;
+      right: 40px;
+      top:0px;
+      list-style: none;
+      background-color: white;
+      box-shadow: 0px 5px 20px #888;
+      padding: 5px 5px;
+      width: max-content;
+      margin:45px 0px; 
+      /* border: 2px solid blue; */
+      color: gray;
+      font-size: 15px;  
+      }
+  .Hackathonphoto{
+    width: 75%;
+    display: block;
+    margin:70px auto;
+  }
+  
+  
+  
+  ul{
+    
+     display: flex;
+    list-style: none;
+    justify-content: center; 
+    color: #888;
+    
+  }
+  li{
+    position:relative;
+    padding: 15px;
+  
+  }
+  .item:hover {
+    color: aqua
+  }
+  
+  .item:hover .sub{
+    display: block;
+  }
+  .sub-item:hover {
+    color:aqua;
+  }
+ 
+  .doc-intro-text{
+    color: #747474;
+      font-size: 16px;
+      display: flex;
+      width: 100%;
+      line-height: 1.3;
+  }
+  .intro-first-text{
+    padding-right: 10px;
+  }
+  .intro-second-text{
+    padding-right: 10px;
+  }
+  .intro-logo{
+    display: block;
+    margin :0 auto;
+  }
+  .intro-text{
+    text-align: center;
+     color: #00b39b;
+     font-size: 30px;
+  }
+  
+  .section-cards{
+   margin: 60px 0;
+    display: flex;
+    height: 400px;  
+    width: 100%;
+  }
+  .card{
+    border-radius: 10px;
+    padding: 0 20px;
+    color: white;
+  }
+  .card-patients{
+    flex :1;
+    background-color: #00ccb1;
+    overflow: hidden;
+    color: white;
+    border-radius: 10px;
+    padding: 0 20px;
+    /* padding-right: 10px; */
+    margin-right: 10px;
+  }
+  .button-selection
+  {
+  padding: 10px;
+  border-radius: 5px;
+  }
+ 
+  
+  .card-img{
+    position: relative;
+  }
+  .card-doctors img{
+    height: 240px;
+  
+  margin: 3px 200px;
+    /* position :absolute;
+    height: 248px;
+    overflow: hidden;
+    left: 150px;
+    top: 50px; */
+  }
+  .patient-select{
+    display: flex;
+  }
+  .docplanner-global{
+    display:flex; 
+    margin-top: 70px;  
+    justify-content: space-around;
+    width: 100%;
+  }
+  .docplanner-text{
+    font-size: 1.625em;
+    flex: 1;
+    color: #00b39b;
+  }
+  .global-links{
+    display: flex;
+    flex-wrap:wrap;
+    flex: 2;
+    height: 25px;
+   
+  }
+
+  .global-links svg:hover{
+    fill: #00ccb1;
+  } 
+  
+  .global-links img{
+    position: relative;
+    padding: 0px 10px;
+    top: 5px;  
+    height: 20px;
+    width: 20px;
+    
+  }
+  .plateform{
+    overflow: hidden;
+    position:absolute;
+    display: flex;
+    margin-top: 40px;
+    left:0;
+    right: 0;
+    background-color: #e5faf8;
+    padding: 0 185px
+  }
+  
+  .world{
+    font-size: 2.125rem;
+    color: #00b39b;
+    font-family: Helvetica ,Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    letter-spacing: .3px;
+  }
+  .office{
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 400;
+    color: #888;
+  
+  }
+  .logo-doc-plateform{
+    position: absolute;
+    height: 430px;
+    width: 430px;
+    margin: 85px -90px;
+  }
+  .plateform-text {
+    width: 40%
+  }
+  .plateform-icon{
+     display: flex;
+     flex-wrap: wrap;
+     text-align: center;
+     padding-top: 10px;
+     padding-bottom: 30px;
+     width: 60%;
+     justify-content: center;
+    }
+  .plateform-icon img{
+     margin:10px 10px;
+  }
+  
+  .docplanner-improvement{
+    text-align: center;
+    margin-top:775px;
+    background-color: white;
+    margin-bottom: 30px;  
+    padding: 0 200px;  
+    color: #00b39b;
+  }
+  .improvement-paragraphe{
+    color: #888;
+    padding: 0 220px;
+  
+  text-align: center;
+  
+  margin-bottom: 70px;
+  }
+  
+  .improvement-text{
+    color: #00b39b;
+  }
+  .plateform-icon p{
+    color: #888;
+  }
+.Hackathon-Title{
+  color: white;
+}
+  
+  .country{
+    margin: 6px;
+    cursor: pointer;
+    
+  }
+  .country:hover{
+    box-shadow: 0 0 10px gray;
+    
+    
+  }.country a {
+    text-decoration: none;
+    color :#888;
+  }
+  
+  .country img{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  .openings-button{
+    align-items: center;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  .openings-button button{
+    border-radius: 4px;
+    background-color:#1662c6;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .openings-button p{
+    color:#888;
+  }
+  
+  
+  
+  .docplanner-countries{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  .docplanner-footer{
+    
+    border-top:1px solid #eef2f2;
+    text-align: center;
+    padding: 1em 0;
+    color:#888;
+    line-height: 1.3;
+    font-size: .75em;
+    
+  }
+  .docplanner-footer a {
+    text-decoration: none;
+    color: #3d83df;
+  }
+  .docplanner-footer a:hover{
+    text-decoration: underline;
+  }
