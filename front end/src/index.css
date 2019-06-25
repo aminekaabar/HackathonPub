@@ -2,10 +2,16 @@ body{
   
   margin-bottom: 0; 
   font-family: Arial, Helvetica, sans-serif;
-  background-color: black
+  /* background-color: black  */
 
   
 }
+/* .website{
+  background-color: red;
+  border : 1px solid black;
+  display: flex !important;
+  align-items: center
+} */
 .Hackathon-Title{
   color: white;
 }

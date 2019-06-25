@@ -1,6 +1,7 @@
 import React from 'react';
 import './navmenu.css';
 import { Navbar,NavDropdown,FormControl,Button,Nav,Form } from 'react-bootstrap';
+import { Link } from 'react-router-dom'
 
 
 // const table =[{className:'about-us', title:'About us'},
@@ -10,7 +11,7 @@ import { Navbar,NavDropdown,FormControl,Button,Nav,Form } from 'react-bootstrap'
 function Headers(){
     return(
         <header className="Docplanner-header">
-            <a href="https://www.docplanner.com">
+            <a href="#">
             {/* <img src={Doclog} alt="logo" /> */}
             <h2>HackathonPub(LOGO)</h2>
             </a>
@@ -20,10 +21,15 @@ function Headers(){
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="#home">About Us</Nav.Link>
+      <Nav.Link href="/aboutus">About Us</Nav.Link>
       < Nav.Link href="#link">Log in</Nav.Link>
-     < Nav.Link href="#link">Sign up</Nav.Link>
+
+     {/* <Link to='/sign-up'> */}
+       < Nav.Link href="/sign-up">Sign up</Nav.Link>
+       {/* </Link> */}
+     
       <NavDropdown title="More" id="basic-nav-dropdown">
+
         <NavDropdown.Item href="http://www.google.com">List of sponsors</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">Archive</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.3">Behind the code</NavDropdown.Item>
