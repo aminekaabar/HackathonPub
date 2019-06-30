@@ -6,6 +6,14 @@ const ClubSchema = new Schema({
     type: Number,
     required: true
   },
+  email:{
+    type:String,
+    required:true
+  },
+  password:{
+    type:String,
+    required:true
+  },
   name: {
     type: String,
     required: true
@@ -13,6 +21,13 @@ const ClubSchema = new Schema({
   institution: {
     type: String,
     required: true
+  },
+  website:{
+    type:String,
+    required:true
+  },
+  phone:{
+    type:Number
   }
 });
 

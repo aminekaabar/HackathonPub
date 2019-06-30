@@ -14,9 +14,25 @@ const HackathonSchema = new Schema({
     type: String,
     required: true
   },
-  sponsor: {
-    type: String,
+  date:{
+    type: Date,
     required: true
+  },
+  description:{
+    type:String,
+    required: true
+  },
+  sponsor_list: {
+    type: Array,
+    required: true
+  },
+  student_list:{
+    type: Array,
+    required:true
+  },
+  image:{
+    type:String,
+    required:true
   }
 });
 

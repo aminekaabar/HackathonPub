@@ -21,6 +21,18 @@ const StudentSchema = new Schema({
   level_of_studies:{
       type: String,
       required: true
+  },
+  email:{
+    type:String,
+    required:true
+  },
+  password:{
+    type:String,
+    required:true
+  },
+  phone:{
+    type:Number,
+    required:true
   }
 });
 

@@ -6,9 +6,25 @@ const SponsorSchema = new Schema({
     type: Number,
     required: true
   },
+  email:{
+    type:String,
+    required:true
+  },
+  password:{
+    type:String,
+    required:true
+  },
   name: {
     type: String,
     required: true
+  },
+  phone:{
+    type:Number,
+    required:true
+  },
+  website:{
+    type:Number,
+    required:true
   }
 });
 
