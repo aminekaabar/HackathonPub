@@ -2,10 +2,6 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const ClubSchema = new Schema({
-  id: {
-    type: Number,
-    required: true
-  },
   email:{
     type:String,
     required:true
@@ -24,7 +20,6 @@ const ClubSchema = new Schema({
   },
   website:{
     type:String,
-    required:true
   },
   phone:{
     type:Number

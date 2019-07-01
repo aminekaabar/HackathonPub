@@ -2,10 +2,6 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const HackathonSchema = new Schema({
-  id: {
-    type: Number,
-    required: true
-  },
   name: {
     type: String,
     required: true
@@ -33,7 +29,11 @@ const HackathonSchema = new Schema({
   image:{
     type:String,
     required:true
-  }
+  },
+creation_date:{
+  type:Date,
+  default: Date.now
+}
 });
 
 module.exports = Hackathon = mongoose.model("hackathon", HackathonSchema);
