@@ -1,13 +1,11 @@
 import React from 'react';
 import './navmenu.css';
 import { Navbar,NavDropdown,FormControl,Button,Nav,Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import Module from './modal';
 
 
-// const table =[{className:'about-us', title:'About us'},
-// {title:'Log in'},
-// {title:'Sign in',sousItem: ['Marketing & PR','Customer Succes & Sales','IT,Product,Design & UX','Finance & Admnistration ','HR & more'] },
-// ]
+
 function Headers(){
     return(
         <header className="Docplanner-header">
@@ -17,12 +15,16 @@ function Headers(){
             </a>
         {/* <Navmenu navItem={table}/> */}
         <Navbar bg="light" expand="lg">
-  <Navbar.Brand href="#home">HackathonPub</Navbar.Brand>
+  <Navbar.Brand href="/">HackathonPub</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
       <Nav.Link href="/aboutus">About Us</Nav.Link>
-      < Nav.Link href="#link">Log in</Nav.Link>
+      < Nav.Link href="">
+      <Module />
+      
+      
+      </Nav.Link>
 
      {/* <Link to='/sign-up'> */}
        < Nav.Link href="/sign-up">Sign up</Nav.Link>
@@ -37,10 +39,10 @@ function Headers(){
         <NavDropdown.Item href="#action/3.4">Founders</NavDropdown.Item>
       </NavDropdown>
     </Nav>
-    <Form inline>
+    {/* <Form inline>
       <FormControl type="text" placeholder="Search a hackathon" className="mr-sm-2" />
       <Button variant="outline-success">Search</Button>
-    </Form>
+    </Form> */}
   </Navbar.Collapse>
 </Navbar>
     </header>

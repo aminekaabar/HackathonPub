@@ -7,7 +7,7 @@ export default function Country({ country }) {
 </div>
 <div className="docplanner-countries">
 {country.map(el => (<div className={el.class}>
-        <img src={el.photo} alt="Taswira"></img>
+        <img className='hackphoto' src={el.photo} alt="Taswira"></img>
         <div className='openings-button'>
           <p>{el.name}</p>
           <Accordion defaultActiveKey="1">

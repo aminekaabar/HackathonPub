@@ -6,10 +6,7 @@ import {
     Input,
     Tooltip,
     Icon,
-    Cascader,
     Select,
-    Row,
-    Col,
     Checkbox,
     Button,
     AutoComplete,
@@ -18,40 +15,7 @@ import {
   const { Option } = Select;
   const AutoCompleteOption = AutoComplete.Option;
   
-  const residences = [
-    {
-      value: 'zhejiang',
-      label: 'Zhejiang',
-      children: [
-        {
-          value: 'hangzhou',
-          label: 'Hangzhou',
-          children: [
-            {
-              value: 'xihu',
-              label: 'West Lake',
-            },
-          ],
-        },
-      ],
-    },
-    {
-      value: 'jiangsu',
-      label: 'Jiangsu',
-      children: [
-        {
-          value: 'nanjing',
-          label: 'Nanjing',
-          children: [
-            {
-              value: 'zhonghuamen',
-              label: 'Zhong Hua Men',
-            },
-          ],
-        },
-      ],
-    },
-  ];
+
   
   class RegistrationForm extends React.Component {
     state = {
@@ -127,7 +91,7 @@ import {
         },
       };
       const prefixSelector = getFieldDecorator('prefix', {
-        initialValue: '86',
+        initialValue: '216',
       })(
         <Select style={{ width: 70 }}>
           <Option value="216">+216</Option>
@@ -141,6 +105,37 @@ import {
   
       return (
         <Form {...formItemLayout} onSubmit={this.handleSubmit}>
+          <Form.Item label="First Name">
+            {getFieldDecorator('First Name', {
+              rules: [
+                {
+                  type: 'Name',
+                  message: 'The input is not valid',
+                },
+                {
+                  required: true,
+                  message: 'Please input your First Name',
+                },
+              ],
+            })(<Input />)}
+          </Form.Item>
+
+          <Form.Item label="Last Name">
+            {getFieldDecorator('Last Name', {
+              rules: [
+                {
+                  type: 'Last Name',
+                  message: 'The input is not valid ',
+                },
+                {
+                  required: true,
+                  message: 'Please input your Last Name',
+                },
+              ],
+            })(<Input />)}
+          </Form.Item>
+          
+          
           <Form.Item label="E-mail">
             {getFieldDecorator('email', {
               rules: [
@@ -184,15 +179,15 @@ import {
           <Form.Item
             label={
               <span>
-                Nickname&nbsp;
+                Username&nbsp;
                 <Tooltip title="What do you want others to call you?">
                   <Icon type="question-circle-o" />
                 </Tooltip>
               </span>
             }
           >
-            {getFieldDecorator('nickname', {
-              rules: [{ required: true, message: 'Please input your nickname!', whitespace: true }],
+            {getFieldDecorator('Usernamse', {
+              rules: [{ required: true, message: 'Please input your username!', whitespace: true }],
             })(<Input />)}
           </Form.Item>
           {/* <Form.Item label="Habitual Residence">
@@ -240,7 +235,7 @@ import {
               valuePropName: 'checked',
             })(
               <Checkbox>
-                I have read the <a href="#">agreement</a>
+                I am not a robot
               </Checkbox>,
             )}
           </Form.Item>
